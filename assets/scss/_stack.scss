@@ -1,0 +1,42 @@
+// Default Stack
+.o-Stack {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.o-Stack__item {
+    flex: 1;
+}
+
+// Split at medium breakpoint
+.o-Stack--split\@m {
+    @media all and (min-width: $split-breakpoint-m) {
+        // At medium breakpoint we switch from column to row
+        flex-direction: row;
+
+        > .o-Stack__item {
+            margin-bottom: 0;
+        }
+
+        &.o-Stack--medium > .o-Stack__item {
+          margin-right: $stack-spacing-medium;
+        }
+
+        &.o-Stack--medium > .o-Stack__item:last-child {
+          margin-right: 0;
+        }
+    }
+}
+
+// Split at extra extra small breakpoint
+.o-Stack--split\@xxs {
+    @media all and (min-width: $split-breakpoint-xxs) {
+        // At extra small breakpoint we switch from column to row
+        flex-direction: row;
+
+        > .o-Stack__item {
+          margin-bottom: 0;
+        }
+    }
+}

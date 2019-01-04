@@ -35,7 +35,7 @@ defmodule Lucidboard.BoardFixtures do
           piles: [
             %Pile{
               cards: [
-                %Card{body: "whoa", id: 2, pile_id: 3, pos: 0},
+                %Card{body: "who", id: 2, pile_id: 3, pos: 0},
                 %Card{body: "srs?", id: 3, pile_id: 3, pos: 1},
                 %Card{body: "neat", id: 4, pile_id: 3, pos: 2}
               ],

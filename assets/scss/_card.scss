@@ -1,0 +1,27 @@
+.c-Card {
+    background-color: $gray;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(9,45,66,.25);
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(193, 202, 208, 0.25);
+
+        .c-Card__icon--edit {
+            display: block;
+        }
+    }
+}
+
+.c-Card__content {
+    flex: 75%;
+}
+
+.c-Card__icon--edit {
+    display: none;
+}

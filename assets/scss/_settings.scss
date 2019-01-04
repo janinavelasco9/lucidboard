@@ -1,0 +1,34 @@
+// Namespaces
+$scales-namespace: 'sls-';
+$scales-base-class-namespace: 'b-';
+$scales-objects-class-namespace: 'o-';
+$scales-components-class-namespace: 'c-';
+$scales-utilities-class-namespace: 'u-';
+
+// Stack
+$space-stack-xs: 0 0 4px 0 !default;
+$space-stack-s: 0 0 8px 0 !default;
+$space-stack-m: 0 0 16px 0 !default;
+$space-stack-l: 0 0 32px 0 !default;
+$space-stack-xl: 0 0 64px 0 !default;
+
+// Global Spacing Utilities
+$space-xs: 4px !default;
+$space-s: 8px !default;
+$space-m: 16px !default;
+$space-l: 32px !default;
+$space-xl: 64px !default;
+$space-h: $space-xl !default;
+
+// Stack Object
+$stack-spacing-tiny: $space-xs !default;
+$stack-spacing-small: $space-s !default;
+$stack-spacing-medium: $space-m !default;
+$stack-spacing-large: $space-l !default;
+$stack-spacing-huge: $space-xl !default;
+$split-breakpoint-xxs: 20rem !default;
+$split-breakpoint-xs: 30rem !default;
+$split-breakpoint-s: 42.5rem !default;
+$split-breakpoint-m: 55rem !default;
+$split-breakpoint-l: 67.5rem !default;
+$split-breakpoint-xl: 80rem !default;

@@ -12,15 +12,42 @@ module.exports = (env, options) => ({
       new OptimizeCSSAssetsPlugin({})
     ]
   },
-  entry: {
-      './js/app.js': ['./js/app.js'].concat(glob.sync('./vendor/**/*.js'))
-  },
+  entry: './scss/main.scss',
   output: {
     filename: 'app.js',
     path: path.resolve(__dirname, '../priv/static/js')
   },
   module: {
     rules: [
+        {
+          test: /\.css$/,
+          exclude: /node_modules/,
+          use: [
+            {
+              loader: 'style-loader',
+            },
+            {
+              loader: 'css-loader',
+              options: {
+                importLoaders: 1,
+              },
+            },
+            {
+              loader: 'postcss-loader',
+            },
+          ],
+        },
+
+        {
+          test: /\.scss$/,
+          use: [
+            // fallback to style-loader in development
+            MiniCssExtractPlugin.loader,
+            'css-loader',
+            'postcss-loader',
+            'sass-loader',
+          ],
+        },
       {
         test: /\.js$/,
         exclude: /node_modules/,
