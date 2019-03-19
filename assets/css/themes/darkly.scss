@@ -1,20 +1,36 @@
-@font-face {
-  font-family: "Arsenal";
-  src: url(/fonts/Arsenal-Regular.ttf) format("truetype");
-}
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import "../../node_modules/bulmaswatch/darkly/variables";
+
 
 @import "../settings/settings";
-@import "../../node_modules/bulmaswatch/darkly/variables";
-$family-primary: "Arsenal";
-$family-heading: "Arsenal";
-@import "bulma";
+
+// $link-hover: #ff3860;
+
+@import "../../node_modules/bulma/bulma";
 @import "../../node_modules/bulmaswatch/darkly/overrides";
 
-main { padding-top: 2em; }
-.cardspacer { margin-bottom: 1em; }
+.c-Card__footer--extra {
+  border-top: $border-width solid $border;
+}
 
-a:hover .card { background-color: $light; }
-.pile { @extend .has-background-light; }
+.c-Card:hover {
+  background-color: $primary;
+  border-color: $primary;
+  // transform: translate3d(0, -3px, 0);
+  
+  .b-Subtitle {
+      color: inherit;
+  }
+}
+
+.card-footer-item:hover {
+  color: #ff3860;
+}
+
+@import "../base/type";
+@import "../components/card";
+
+
 form .field:not(:last-child) { margin-bottom: 2em; }
 
 .mainhero { @extend .is-black; }

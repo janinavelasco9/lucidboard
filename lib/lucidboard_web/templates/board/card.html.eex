@@ -1,4 +1,3 @@
-<div class="c-Card card">
   <!--
   <header class="card-header">
     <p class="card-header-title">
@@ -10,8 +9,24 @@
       </span>
     </a>
   </header>
+      <div class="c-Card__labels u-Pvs">
+      <span class="c-Card__label c-Card__label--turquoise">
+        si
+      </span>
+      <span class="c-Card__label c-Card__label--red">
+        here is some text too
+      </span>
+      <span class="c-Card__label c-Card__label--purple">
+          if they hover and the content is really long we expect it to play nicely
+      </span>
+      <span class="c-Card__label c-Card__label--cyan">
+        omg me tooooo here is some amazing text that could take up a lot of room in the label
+        but really if people had a label this long, idk
+      </span>
+    </div>
   -->
   <div phx-click="inline-edit" class="card-content">
+
     <%= cond do %>
     <% @locked_by_user? -> %>
       <%= form_for @card_changeset, "#", [phx_submit: :card_save], fn f -> %>
@@ -33,6 +48,7 @@
   <footer class="card-footer">
     <a href="#" class="card-footer-item"><%= fas("heart") %>&nbsp;7</a>
     <a href="#" class="card-footer-item" data-modal="trigger"><%= fas("edit") %></a>
+    <a href="#" class="card-footer-item"><%= fas("trash-alt") %></a>
   </footer>
   <div class="modal">
     <div class="modal-background"></div>
@@ -91,4 +107,7 @@
       </footer>
     </div>
   </div>
+<<<<<<< HEAD
 </div>
+=======
+>>>>>>> all over the place. mainly labels

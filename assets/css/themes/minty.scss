@@ -1,20 +1,12 @@
-@import "../settings/settings";
-
-@font-face {
-  font-family: "Arsenal";
-  src: url(/fonts/Arsenal-Regular.ttf) format("truetype");
-}
-
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 @import "../../node_modules/bulmaswatch/minty/variables";
-$family-primary: "Arsenal";
-$family-heading: "Arsenal";
-@import "bulma";
+
+@import "../../node_modules/bulma/bulma";
+@import "../settings/settings";
 @import "../../node_modules/bulmaswatch/minty/overrides";
 
-main { padding-top: 2em; }
-.cardspacer { margin-bottom: 1em; }
+@import "../components/card";
 
-a:hover .card { background-color: $light; }
 .pile { @extend .has-background-light; }
 form .field:not(:last-child) { margin-bottom: 2em; }
 
