@@ -29,7 +29,7 @@ config :lucidboard, :templates, %{
   }
 }
 
-config :lucidboard, :default_theme, "solar"
+config :lucidboard, :default_theme, "journal"
 
 config :lucidboard, :themes, ~w(solar minty journal darkly)
 

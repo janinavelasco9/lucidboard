@@ -1,13 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 @import "../../node_modules/bulmaswatch/minty/variables";
 
-@import "../../node_modules/bulma/bulma";
 @import "../settings/settings";
+
+@import "../../node_modules/bulma/bulma";
+
+
 @import "../../node_modules/bulmaswatch/minty/overrides";
 
 @import "../components/card";
 
-.pile { @extend .has-background-light; }
-form .field:not(:last-child) { margin-bottom: 2em; }
+a:hover {
+    color: $primary;
+}
 
-.mainhero { @extend .is-black; }
+.c-Card__content:hover {
+    color: $primary;
+
+    .b-Subtitle {
+        color: $primary;
+    }
+}
+
+.card-footer-item:hover {
+    color: $primary;
+}

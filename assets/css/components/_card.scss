@@ -2,24 +2,6 @@
     transition: background-color .2s ease-in-out;
 }
 
-// .c-Card__labels:hover {
-//     .c-Card__label--turquoise {
-//         background-color: $turquoise;
-//     }
-    
-//     .c-Card__label--red {
-//         background-color: $red;
-//     }
-    
-//     .c-Card__label--purple {
-//         background-color: $purple;
-//     }
-    
-//     .c-Card__label--cyan {
-//         background-color: $cyan;
-//     }
-// }
-
 .c-Card__labels {
     display: flex;
     flex-wrap: wrap;
@@ -28,6 +10,7 @@
 .c-Card__label {
     border-radius: 3px;
     color: white;
+    cursor: pointer;
     max-height: 8px;
     margin: 0 0.55rem 0.25rem 0;
     min-width: 40px;
@@ -35,7 +18,6 @@
     line-height: 100px;
     overflow: hidden;
     max-width: 40px;
-    // transition: max-height .5s ease-in-out;
     transition: max-width 1s ease-in-out,
     max-height .5s ease-in-out;;
 }
@@ -53,7 +35,7 @@
     display: inline-block;
 
     @media all and (min-width: $desktop) {
-        max-width: 22rem;
+        max-width: 20rem;
     }
 }
 
@@ -69,18 +51,28 @@
     width: auto;
 }
 
-.c-Card__label--turquoise {
+.c-Card__label--turquoise,
+.c-DropDown__item--turquoise {
     background-color: $turquoise;
 }
 
-.c-Card__label--red {
+.c-Card__label--red,
+.c-DropDown__item--red {
     background-color: $red;
 }
 
-.c-Card__label--purple {
+.c-Card__label--purple,
+.c-DropDown__item--purple {
     background-color: $purple;
 }
 
-.c-Card__label--cyan {
+.c-Card__label--cyan,
+.c-DropDown__item--cyan {
     background-color: $cyan;
+}
+
+.c-DropDown__menu {
+    left: -4.75rem;
+    position: relative;
+    top: 2rem;
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 @import "../../node_modules/bulmaswatch/solar/variables";
-
+$link: $primary;
 
 @import "../../node_modules/bulma/bulma";
 @import "../settings/settings";
@@ -8,7 +8,18 @@
 
 @import "../components/card";
 
-.pile { @extend .has-background-light; }
-form .field:not(:last-child) { margin-bottom: 2em; }
+a:hover {
+    color: lighten($primary, 25%);
+}
 
-.mainhero { @extend .is-black; }
+.c-Card:hover {
+    color: lighten($primary, 25%);
+
+    .b-Subtitle {
+        color: lighten($primary, 25%);
+    }
+}
+  
+  .card-footer-item:hover {
+    color: lighten($primary, 25%);
+  }

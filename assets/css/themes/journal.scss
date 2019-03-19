@@ -4,8 +4,6 @@
 
 @import "../settings/settings";
 
-$link-hover: $primary;
-
 @import "../../node_modules/bulma/bulma";
 @import "../../node_modules/bulmaswatch/journal/overrides";
 
@@ -13,17 +11,13 @@ $link-hover: $primary;
 @import "../components/card";
 
 .c-Card:hover {
-    border-color: $primary;
+    color: $primary;
 
     .b-Subtitle {
-        color: inherit;
+        color: $primary;
     }
 }
 
 .card-footer-item:hover {
     color: $primary;
 }
-
-form .field:not(:last-child) { margin-bottom: 2em; }
-
-.mainhero { @extend .is-black; }

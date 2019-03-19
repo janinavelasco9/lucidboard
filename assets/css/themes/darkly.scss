@@ -1,36 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 @import "../../node_modules/bulmaswatch/darkly/variables";
 
-
 @import "../settings/settings";
-
-// $link-hover: #ff3860;
+$dropdown-item-hover-color: lighten($primary, 25%);
 
 @import "../../node_modules/bulma/bulma";
 @import "../../node_modules/bulmaswatch/darkly/overrides";
 
-.c-Card__footer--extra {
-  border-top: $border-width solid $border;
+@import "../base/type";
+@import "../components/card";
+
+a:hover {
+  color: lighten($primary, 25%);
 }
 
 .c-Card:hover {
-  background-color: $primary;
-  border-color: $primary;
-  // transform: translate3d(0, -3px, 0);
-  
+  color: lighten($primary, 25%);
+
   .b-Subtitle {
-      color: inherit;
+    color: lighten($primary, 25%);
   }
 }
 
 .card-footer-item:hover {
-  color: #ff3860;
+  color: lighten($primary, 25%);
 }
-
-@import "../base/type";
-@import "../components/card";
-
-
-form .field:not(:last-child) { margin-bottom: 2em; }
-
-.mainhero { @extend .is-black; }
