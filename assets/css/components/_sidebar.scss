@@ -1,0 +1,13 @@
+.lb-sidebar {
+  display: none;
+  border: 2px solid $dark-gray;
+  background-color: $grey-darker;
+  color: $white;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 18rem;
+  max-width: 20rem;
+  z-index: 2;
+}

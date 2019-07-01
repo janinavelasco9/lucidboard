@@ -10,19 +10,10 @@
       <div class="stack stack--spaceBetween lb-body--divider u-Mbm">
         <h2 class="lb-heading--secondary"><%= column.title %></h2>
 
-        <div class="dropdown is-right is-hoverable">
-          <div class="dropdown-trigger">
-            <button class="button lb-button lb-button--plain" aria-haspopup="true" aria-controls="column-menu">
-              <%= fas("ellipsis-h") %>
-            </button>
-          </div>
-          <div class="dropdown-menu u-Pan" id="column-menu" role="menu">
-            <div class="dropdown-content lb-dropdown-content">
-              <a href="#" phx-click="sortby_likes" phx-value="<%= column.id %>" class="dropdown-item lb-dropdown-item">
-                Sort by Likes
-              </a>
-            </div>
-          </div>
+        <div class="is-inline-flex">
+          <button class="button lb-button lb-button--plain" phx-click="sortby_likes" phx-value="<%= column.id %>">
+            Sort by Likes
+          </button>
         </div>
       </div>
 
